@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events pactrices</title>
+</head>
+<body>
+ <h1> hi my name is amit hasan faysal</h1>
+
+ <button onclick="console.log(7)">Click me </button>
+ <button onclick="console.log('my name is amit hasan faysal')"> Another change</button>
+ <button onclick="console.log(65)"> number change </button>
+
+ <h1>number 2 numbers  sum </h1>
+ <input id="num1" type="number1" placeholder="please any input number">
+ <input id="num2" type="number2" placeholder="please any input number">
+ 
+ <button onclick="makeRed()"> button red</button>
+ <button onclick="makedark()">button coral</button>
+ <button onclick="makeBlue()">button blue</button>
+ <button id="make-Purple">button purple</button>
+  <button id="make-pink"> button make pink</button>
+  <!-- update text input field -->
+  <p id="input-text-display"> Default input text </p>
+
+ <input id="input-field" type="text">
+ 
+ <button id="btn-update"> UPDATE</button>
+
+  <!-- button text change  -->
+   <h3 id="handler-status">I am software engineer</h3>
+   <button onclick=" handleonclick()"> handel event by add onclick function </button>
+
+    <script src="js/events.js"> </script>
+    <script>
+    document.getElementById('btn-update').addEventListener('click', function()
+    {
+        const InputField = document.getElementById('input-field');
+        const inputText = InputField.value;
+         const p= document.getElementById('input-text-display');
+         p.innerText = inputText;
+         InputField.value='';
+    })
+
+        
+    
+        function makeBlue(){
+    document.body.style.backgroundColor='blue';
+}
+       
+      
+    </script>
+</body>
+</html>
