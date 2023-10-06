@@ -11,6 +11,7 @@
         }
         #item-3{
             border: 2px solid rebeccapurple;
+            
         }
         ul{
             border: 2px solid tomato;
@@ -36,10 +37,10 @@
         </ul>
     </section>
     <script>
-        // document.getElementById('item-2').addEventListener('click', function(event){
-        //     console.log('Item-2 clicked');
-        //     event.stopImmediatePropagation();
-        // });
+     document.getElementById('item-2').addEventListener('click', function(event){
+            console.log('Item-2 clicked');
+         event.stopImmediatePropagation();
+         });
        document.getElementById('item-2').addEventListener('click', function(event){
            console.log('Item-2 second clicked');
        });
